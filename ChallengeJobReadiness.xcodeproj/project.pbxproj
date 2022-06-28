@@ -10,12 +10,19 @@
 		0E73158C286A40D900C01052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73158B286A40D900C01052 /* AppDelegate.swift */; };
 		0E73158E286A40D900C01052 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73158D286A40D900C01052 /* SceneDelegate.swift */; };
 		0E731590286A40D900C01052 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73158F286A40D900C01052 /* ViewController.swift */; };
-		0E731593286A40D900C01052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E731591286A40D900C01052 /* Main.storyboard */; };
 		0E731595286A40DB00C01052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E731594286A40DB00C01052 /* Assets.xcassets */; };
 		0E731598286A40DB00C01052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E731596286A40DB00C01052 /* LaunchScreen.storyboard */; };
 		0E7315A3286A40DB00C01052 /* ChallengeJobReadinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7315A2286A40DB00C01052 /* ChallengeJobReadinessTests.swift */; };
 		0E7315AD286A40DB00C01052 /* ChallengeJobReadinessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7315AC286A40DB00C01052 /* ChallengeJobReadinessUITests.swift */; };
 		0E7315AF286A40DB00C01052 /* ChallengeJobReadinessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7315AE286A40DB00C01052 /* ChallengeJobReadinessUITestsLaunchTests.swift */; };
+		0E7315BD286A414500C01052 /* InitialTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7315BB286A414500C01052 /* InitialTabViewController.swift */; };
+		0E7315BE286A414500C01052 /* InitialTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E7315BC286A414500C01052 /* InitialTabViewController.xib */; };
+		0E7315C1286A437200C01052 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7315BF286A437200C01052 /* HomeViewController.swift */; };
+		0E7315C2286A437200C01052 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E7315C0286A437200C01052 /* HomeViewController.xib */; };
+		0E7315C5286A44A300C01052 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7315C3286A44A300C01052 /* FavoritesViewController.swift */; };
+		0E7315C6286A44A300C01052 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E7315C4286A44A300C01052 /* FavoritesViewController.xib */; };
+		0ECB089B286B4E8F00150951 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB0899286B4E8F00150951 /* ItemTableViewCell.swift */; };
+		0ECB089C286B4E8F00150951 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ECB089A286B4E8F00150951 /* ItemTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +47,6 @@
 		0E73158B286A40D900C01052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E73158D286A40D900C01052 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0E73158F286A40D900C01052 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0E731592286A40D900C01052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E731594286A40DB00C01052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E731597286A40DB00C01052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E731599286A40DB00C01052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +55,14 @@
 		0E7315A8286A40DB00C01052 /* ChallengeJobReadinessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeJobReadinessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7315AC286A40DB00C01052 /* ChallengeJobReadinessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeJobReadinessUITests.swift; sourceTree = "<group>"; };
 		0E7315AE286A40DB00C01052 /* ChallengeJobReadinessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeJobReadinessUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0E7315BB286A414500C01052 /* InitialTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialTabViewController.swift; sourceTree = "<group>"; };
+		0E7315BC286A414500C01052 /* InitialTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialTabViewController.xib; sourceTree = "<group>"; };
+		0E7315BF286A437200C01052 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0E7315C0286A437200C01052 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		0E7315C3286A44A300C01052 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		0E7315C4286A44A300C01052 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		0ECB0899286B4E8F00150951 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		0ECB089A286B4E8F00150951 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +116,17 @@
 				0E73158B286A40D900C01052 /* AppDelegate.swift */,
 				0E73158D286A40D900C01052 /* SceneDelegate.swift */,
 				0E73158F286A40D900C01052 /* ViewController.swift */,
-				0E731591286A40D900C01052 /* Main.storyboard */,
 				0E731594286A40DB00C01052 /* Assets.xcassets */,
 				0E731596286A40DB00C01052 /* LaunchScreen.storyboard */,
 				0E731599286A40DB00C01052 /* Info.plist */,
+				0E7315BB286A414500C01052 /* InitialTabViewController.swift */,
+				0E7315BC286A414500C01052 /* InitialTabViewController.xib */,
+				0E7315BF286A437200C01052 /* HomeViewController.swift */,
+				0E7315C0286A437200C01052 /* HomeViewController.xib */,
+				0E7315C3286A44A300C01052 /* FavoritesViewController.swift */,
+				0E7315C4286A44A300C01052 /* FavoritesViewController.xib */,
+				0ECB0899286B4E8F00150951 /* ItemTableViewCell.swift */,
+				0ECB089A286B4E8F00150951 /* ItemTableViewCell.xib */,
 			);
 			path = ChallengeJobReadiness;
 			sourceTree = "<group>";
@@ -232,8 +253,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E731598286A40DB00C01052 /* LaunchScreen.storyboard in Resources */,
+				0E7315BE286A414500C01052 /* InitialTabViewController.xib in Resources */,
 				0E731595286A40DB00C01052 /* Assets.xcassets in Resources */,
-				0E731593286A40D900C01052 /* Main.storyboard in Resources */,
+				0E7315C6286A44A300C01052 /* FavoritesViewController.xib in Resources */,
+				0ECB089C286B4E8F00150951 /* ItemTableViewCell.xib in Resources */,
+				0E7315C2286A437200C01052 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E7315C1286A437200C01052 /* HomeViewController.swift in Sources */,
 				0E731590286A40D900C01052 /* ViewController.swift in Sources */,
+				0E7315BD286A414500C01052 /* InitialTabViewController.swift in Sources */,
 				0E73158C286A40D900C01052 /* AppDelegate.swift in Sources */,
+				0E7315C5286A44A300C01052 /* FavoritesViewController.swift in Sources */,
+				0ECB089B286B4E8F00150951 /* ItemTableViewCell.swift in Sources */,
 				0E73158E286A40D900C01052 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +325,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0E731591286A40D900C01052 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0E731592286A40D900C01052 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0E731596286A40DB00C01052 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +462,6 @@
 				INFOPLIST_FILE = ChallengeJobReadiness/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +489,6 @@
 				INFOPLIST_FILE = ChallengeJobReadiness/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
