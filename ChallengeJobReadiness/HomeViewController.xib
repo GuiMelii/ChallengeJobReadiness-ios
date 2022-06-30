@@ -10,8 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ChallengeJobReadiness" customModuleProvider="target">
             <connections>
+                <outlet property="HeaderUIView" destination="kYY-eX-KRw" id="Q8m-Bd-N1E"/>
+                <outlet property="inputContainerView" destination="Swi-gw-hp7" id="FCV-dl-7Ls"/>
                 <outlet property="itemsTableView" destination="WFH-RQ-BVw" id="8hv-El-pLT"/>
-                <outlet property="searchTextField" destination="M02-ha-gQq" id="LxJ-cs-tED"/>
+                <outlet property="searchTextField" destination="M02-ha-gQq" id="l3U-EH-vIa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -62,6 +64,9 @@
                                     <rect key="frame" x="33" y="0.0" width="221" height="30"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="inputDidEndEditing:" destination="-1" eventType="editingDidEnd" id="JLn-Wx-g7a"/>
+                                    </connections>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

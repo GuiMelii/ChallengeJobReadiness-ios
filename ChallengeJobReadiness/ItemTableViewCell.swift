@@ -14,5 +14,9 @@ class ItemTableViewCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var descriptionOneLabel: UILabel!
     @IBOutlet weak var descriptionTwoLabel: UILabel!
-    
+    @IBOutlet weak var favoriteButtonView: UIView!
+        
+    @IBAction func favoriteUIButtonAction(_ sender: UIButton) {
+        print("oi")
+    }
 }

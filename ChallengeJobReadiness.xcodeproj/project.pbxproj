@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E680D38286B89590009C725 /* AlamoFireApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E680D37286B89590009C725 /* AlamoFireApiClient.swift */; };
+		0E680D3A286B89D90009C725 /* ItensServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E680D39286B89D90009C725 /* ItensServices.swift */; };
 		0E73158C286A40D900C01052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73158B286A40D900C01052 /* AppDelegate.swift */; };
 		0E73158E286A40D900C01052 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73158D286A40D900C01052 /* SceneDelegate.swift */; };
 		0E731590286A40D900C01052 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73158F286A40D900C01052 /* ViewController.swift */; };
@@ -21,8 +23,13 @@
 		0E7315C2286A437200C01052 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E7315C0286A437200C01052 /* HomeViewController.xib */; };
 		0E7315C5286A44A300C01052 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7315C3286A44A300C01052 /* FavoritesViewController.swift */; };
 		0E7315C6286A44A300C01052 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E7315C4286A44A300C01052 /* FavoritesViewController.xib */; };
+		0EB03F25286CD8EC005A357D /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB03F23286CD8EC005A357D /* ItemViewController.swift */; };
+		0EB03F26286CD8EC005A357D /* ItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB03F24286CD8EC005A357D /* ItemViewController.xib */; };
 		0ECB089B286B4E8F00150951 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB0899286B4E8F00150951 /* ItemTableViewCell.swift */; };
 		0ECB089C286B4E8F00150951 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ECB089A286B4E8F00150951 /* ItemTableViewCell.xib */; };
+		233B176176CB2973CC976D16 /* Pods_ChallengeJobReadiness_ChallengeJobReadinessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8C4926B7CE9856EA4FFAF5 /* Pods_ChallengeJobReadiness_ChallengeJobReadinessUITests.framework */; };
+		46C9865252B23D860D139774 /* Pods_ChallengeJobReadiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD05A3FDD0FD879E3F5300E /* Pods_ChallengeJobReadiness.framework */; };
+		C1A1B6E63EA50E001A445528 /* Pods_ChallengeJobReadinessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4C37061BC05537EA29CC4A /* Pods_ChallengeJobReadinessTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CCD6AB6412AA59F489F7512 /* Pods-ChallengeJobReadinessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeJobReadinessTests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeJobReadinessTests/Pods-ChallengeJobReadinessTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0E680D37286B89590009C725 /* AlamoFireApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoFireApiClient.swift; sourceTree = "<group>"; };
+		0E680D39286B89D90009C725 /* ItensServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItensServices.swift; sourceTree = "<group>"; };
 		0E731588286A40D900C01052 /* ChallengeJobReadiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeJobReadiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E73158B286A40D900C01052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E73158D286A40D900C01052 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,8 +71,18 @@
 		0E7315C0286A437200C01052 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		0E7315C3286A44A300C01052 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		0E7315C4286A44A300C01052 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		0EB03F23286CD8EC005A357D /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		0EB03F24286CD8EC005A357D /* ItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemViewController.xib; sourceTree = "<group>"; };
 		0ECB0899286B4E8F00150951 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		0ECB089A286B4E8F00150951 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		A123F5BBDD4BFE01D051A4E9 /* Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests/Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B20A3895BF3ACFA4B48D65F5 /* Pods-ChallengeJobReadinessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeJobReadinessTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeJobReadinessTests/Pods-ChallengeJobReadinessTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB8C4926B7CE9856EA4FFAF5 /* Pods_ChallengeJobReadiness_ChallengeJobReadinessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeJobReadiness_ChallengeJobReadinessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C22855C1F2CC8DA6E268E399 /* Pods-ChallengeJobReadiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeJobReadiness.release.xcconfig"; path = "Target Support Files/Pods-ChallengeJobReadiness/Pods-ChallengeJobReadiness.release.xcconfig"; sourceTree = "<group>"; };
+		D220B7E495F0D7399626D335 /* Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests/Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E35D5415EE2482C36BF3AAE9 /* Pods-ChallengeJobReadiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeJobReadiness.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeJobReadiness/Pods-ChallengeJobReadiness.debug.xcconfig"; sourceTree = "<group>"; };
+		EAD05A3FDD0FD879E3F5300E /* Pods_ChallengeJobReadiness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeJobReadiness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4C37061BC05537EA29CC4A /* Pods_ChallengeJobReadinessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeJobReadinessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C9865252B23D860D139774 /* Pods_ChallengeJobReadiness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A1B6E63EA50E001A445528 /* Pods_ChallengeJobReadinessTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +106,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				233B176176CB2973CC976D16 /* Pods_ChallengeJobReadiness_ChallengeJobReadinessUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E680D36286B89310009C725 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0E680D37286B89590009C725 /* AlamoFireApiClient.swift */,
+				0E680D39286B89D90009C725 /* ItensServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		0E73157F286A40D900C01052 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +129,8 @@
 				0E7315A1286A40DB00C01052 /* ChallengeJobReadinessTests */,
 				0E7315AB286A40DB00C01052 /* ChallengeJobReadinessUITests */,
 				0E731589286A40D900C01052 /* Products */,
+				D84097E30AA4FD8820F8CBC4 /* Pods */,
+				861EC05D091D45266A9B427A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +147,7 @@
 		0E73158A286A40D900C01052 /* ChallengeJobReadiness */ = {
 			isa = PBXGroup;
 			children = (
+				0E680D36286B89310009C725 /* Services */,
 				0E73158B286A40D900C01052 /* AppDelegate.swift */,
 				0E73158D286A40D900C01052 /* SceneDelegate.swift */,
 				0E73158F286A40D900C01052 /* ViewController.swift */,
@@ -127,6 +162,8 @@
 				0E7315C4286A44A300C01052 /* FavoritesViewController.xib */,
 				0ECB0899286B4E8F00150951 /* ItemTableViewCell.swift */,
 				0ECB089A286B4E8F00150951 /* ItemTableViewCell.xib */,
+				0EB03F23286CD8EC005A357D /* ItemViewController.swift */,
+				0EB03F24286CD8EC005A357D /* ItemViewController.xib */,
 			);
 			path = ChallengeJobReadiness;
 			sourceTree = "<group>";
@@ -148,6 +185,29 @@
 			path = ChallengeJobReadinessUITests;
 			sourceTree = "<group>";
 		};
+		861EC05D091D45266A9B427A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAD05A3FDD0FD879E3F5300E /* Pods_ChallengeJobReadiness.framework */,
+				BB8C4926B7CE9856EA4FFAF5 /* Pods_ChallengeJobReadiness_ChallengeJobReadinessUITests.framework */,
+				EE4C37061BC05537EA29CC4A /* Pods_ChallengeJobReadinessTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D84097E30AA4FD8820F8CBC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E35D5415EE2482C36BF3AAE9 /* Pods-ChallengeJobReadiness.debug.xcconfig */,
+				C22855C1F2CC8DA6E268E399 /* Pods-ChallengeJobReadiness.release.xcconfig */,
+				D220B7E495F0D7399626D335 /* Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests.debug.xcconfig */,
+				A123F5BBDD4BFE01D051A4E9 /* Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests.release.xcconfig */,
+				0CCD6AB6412AA59F489F7512 /* Pods-ChallengeJobReadinessTests.debug.xcconfig */,
+				B20A3895BF3ACFA4B48D65F5 /* Pods-ChallengeJobReadinessTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E7315B2286A40DB00C01052 /* Build configuration list for PBXNativeTarget "ChallengeJobReadiness" */;
 			buildPhases = (
+				C76CA2F50AEA03FBD5255DB0 /* [CP] Check Pods Manifest.lock */,
 				0E731584286A40D900C01052 /* Sources */,
 				0E731585286A40D900C01052 /* Frameworks */,
 				0E731586286A40D900C01052 /* Resources */,
+				8F898C69CCDA546703568FA6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,6 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E7315B5286A40DB00C01052 /* Build configuration list for PBXNativeTarget "ChallengeJobReadinessTests" */;
 			buildPhases = (
+				F3C1420AFA5D54847A3A62AD /* [CP] Check Pods Manifest.lock */,
 				0E73159A286A40DB00C01052 /* Sources */,
 				0E73159B286A40DB00C01052 /* Frameworks */,
 				0E73159C286A40DB00C01052 /* Resources */,
@@ -190,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E7315B8286A40DB00C01052 /* Build configuration list for PBXNativeTarget "ChallengeJobReadinessUITests" */;
 			buildPhases = (
+				BCCFFF75AEF90BE65DB72AA9 /* [CP] Check Pods Manifest.lock */,
 				0E7315A4286A40DB00C01052 /* Sources */,
 				0E7315A5286A40DB00C01052 /* Frameworks */,
 				0E7315A6286A40DB00C01052 /* Resources */,
+				298E62D77377966F82DFA63C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +320,7 @@
 				0E731598286A40DB00C01052 /* LaunchScreen.storyboard in Resources */,
 				0E7315BE286A414500C01052 /* InitialTabViewController.xib in Resources */,
 				0E731595286A40DB00C01052 /* Assets.xcassets in Resources */,
+				0EB03F26286CD8EC005A357D /* ItemViewController.xib in Resources */,
 				0E7315C6286A44A300C01052 /* FavoritesViewController.xib in Resources */,
 				0ECB089C286B4E8F00150951 /* ItemTableViewCell.xib in Resources */,
 				0E7315C2286A437200C01052 /* HomeViewController.xib in Resources */,
@@ -277,6 +343,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		298E62D77377966F82DFA63C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests/Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests/Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests/Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F898C69CCDA546703568FA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeJobReadiness/Pods-ChallengeJobReadiness-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeJobReadiness/Pods-ChallengeJobReadiness-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengeJobReadiness/Pods-ChallengeJobReadiness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCCFFF75AEF90BE65DB72AA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C76CA2F50AEA03FBD5255DB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeJobReadiness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3C1420AFA5D54847A3A62AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeJobReadinessTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0E731584286A40D900C01052 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,9 +453,12 @@
 			files = (
 				0E7315C1286A437200C01052 /* HomeViewController.swift in Sources */,
 				0E731590286A40D900C01052 /* ViewController.swift in Sources */,
+				0E680D3A286B89D90009C725 /* ItensServices.swift in Sources */,
 				0E7315BD286A414500C01052 /* InitialTabViewController.swift in Sources */,
 				0E73158C286A40D900C01052 /* AppDelegate.swift in Sources */,
+				0E680D38286B89590009C725 /* AlamoFireApiClient.swift in Sources */,
 				0E7315C5286A44A300C01052 /* FavoritesViewController.swift in Sources */,
+				0EB03F25286CD8EC005A357D /* ItemViewController.swift in Sources */,
 				0ECB089B286B4E8F00150951 /* ItemTableViewCell.swift in Sources */,
 				0E73158E286A40D900C01052 /* SceneDelegate.swift in Sources */,
 			);
@@ -452,6 +624,7 @@
 		};
 		0E7315B3286A40DB00C01052 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E35D5415EE2482C36BF3AAE9 /* Pods-ChallengeJobReadiness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -479,6 +652,7 @@
 		};
 		0E7315B4286A40DB00C01052 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C22855C1F2CC8DA6E268E399 /* Pods-ChallengeJobReadiness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -506,6 +680,7 @@
 		};
 		0E7315B6286A40DB00C01052 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CCD6AB6412AA59F489F7512 /* Pods-ChallengeJobReadinessTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,6 +701,7 @@
 		};
 		0E7315B7286A40DB00C01052 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B20A3895BF3ACFA4B48D65F5 /* Pods-ChallengeJobReadinessTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -546,6 +722,7 @@
 		};
 		0E7315B9286A40DB00C01052 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D220B7E495F0D7399626D335 /* Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -564,6 +741,7 @@
 		};
 		0E7315BA286A40DB00C01052 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A123F5BBDD4BFE01D051A4E9 /* Pods-ChallengeJobReadiness-ChallengeJobReadinessUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

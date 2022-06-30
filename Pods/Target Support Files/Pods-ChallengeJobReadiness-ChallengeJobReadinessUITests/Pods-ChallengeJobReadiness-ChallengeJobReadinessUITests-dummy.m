@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_ChallengeJobReadiness_ChallengeJobReadinessUITests : NSObject
+@end
+@implementation PodsDummy_Pods_ChallengeJobReadiness_ChallengeJobReadinessUITests
+@end
