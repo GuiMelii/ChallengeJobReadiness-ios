@@ -43,9 +43,9 @@ final class ItemViewController: UIViewController {
         
         self.subtitleLabel.text = item.title
         self.titleLabel.text = item.title
-        self.priceLabel.text = "$\(item.price)"
-        self.soldQuantityLabel.text = "Vendidos totales: \(item.sold_quantity)"
-        self.availableQuantityLabel.text = "Disponibles: \(item.available_quantity)"
+        self.priceLabel.text = formatToCurrency(value: item.price)
+        self.soldQuantityLabel.text = "Vendidos: \(item.sold_quantity)"
+        self.availableQuantityLabel.text = "Disponíveis: \(item.available_quantity)"
         
         if let url = URL(string: item.pictures[0].secure_url) {
             UIImage.loadFrom(url: url) { image in
@@ -71,10 +71,7 @@ final class ItemViewController: UIViewController {
     @IBAction private func backButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
-    
-    @IBAction private func onClickWhatsapp(_ sender: Any) {}
-    
-    
+        
     @IBAction private func onHeartClick(_ sender: UIButton) {
         var favoriteItens = self.userDefaults.array(forKey: "favoriteItemsArray") as! [String]?
         let findItemOnArray = favoriteItens?.first(where: {$0 == item.id})
@@ -91,19 +88,5 @@ final class ItemViewController: UIViewController {
             self.userDefaults.set(favoriteItens, forKey: "favoriteItemsArray")
             self.heartUIButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
         }
-    }
-}
-
-extension String {
-    var htmlToAttributedString: NSAttributedString? {
-        guard let data = data(using: .utf8) else { return nil }
-        do {
-            return try NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding:String.Encoding.utf8.rawValue], documentAttributes: nil)
-        } catch {
-            return nil
-        }
-    }
-    var htmlToString: String {
-        return htmlToAttributedString?.string ?? ""
     }
 }
