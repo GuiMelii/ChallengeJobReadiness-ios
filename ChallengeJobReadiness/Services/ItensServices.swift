@@ -14,6 +14,7 @@ final class ItensServices {
     func getCategoriesCode(of searchText: String, completion: @escaping ([Category]?) -> Void) {
         let categoriesURL = baseUrl + "/sites/MLB/domain_discovery/search?limit=1&q=\(searchText)"
         
+        print(categoriesURL)
         apiClient.get(url: categoriesURL) { response in
             switch response {
             case .success(let data):
@@ -23,9 +24,11 @@ final class ItensServices {
                         completion(categories)
                     }
                 } catch {
+                    print("ERRO getcatego")
                     completion(nil)
                 }
             case .failure(let error):
+                print("ERRO")
                 print("❌", error)
                 completion(nil)
             }
