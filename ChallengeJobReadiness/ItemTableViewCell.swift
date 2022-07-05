@@ -14,9 +14,12 @@ class ItemTableViewCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var descriptionOneLabel: UILabel!
     @IBOutlet weak var descriptionTwoLabel: UILabel!
-    @IBOutlet weak var favoriteButtonView: UIView!
-        
-    @IBAction func favoriteUIButtonAction(_ sender: UIButton) {
-        print("oi")
+    @IBOutlet weak var FavoriteButtonUIControl: UIControl!
+    @IBOutlet weak var heartImageView: UIImageView!
+    
+    var favoriteAction: (() -> Void)? = nil
+
+    @IBAction func onFavoriteClick(_ sender: Any) {
+        favoriteAction?()
     }
 }

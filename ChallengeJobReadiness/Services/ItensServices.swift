@@ -24,6 +24,7 @@ struct BodyItemsResponse: Codable {
 }
 
 struct InfoItem: Codable {
+    let id: String
     let title: String
     let price: Double
     let sold_quantity: Int
@@ -34,6 +35,10 @@ struct InfoItem: Codable {
 struct Picture: Codable {
     let url: String
     let secure_url: String
+}
+
+struct DescriptionResponse: Codable {
+    let plain_text: String
 }
 
 
@@ -56,7 +61,8 @@ class ItensServices {
                 } catch {
                     completion(nil)
                 }
-            case .failure(_):
+            case .failure(let error):
+                print(error)
                 completion(nil)
             }
         }
@@ -77,7 +83,8 @@ class ItensServices {
                 } catch {
                     completion(nil)
                 }
-            case .failure(_):
+            case .failure(let error):
+                print(error)
                 completion(nil)
             }
             
@@ -86,8 +93,7 @@ class ItensServices {
     
     func getInfoByItemId(itemsIds: String, completion: @escaping ([BodyItemsResponse]?) -> Void) {
         let multiItemURL = "https://api.mercadolibre.com/items\(itemsIds)"
-        print("multiItemUrl:", multiItemURL)
-        
+                
         apiClient.get(url: multiItemURL) { response in
             switch response {
             case .success(let data):
@@ -100,6 +106,28 @@ class ItensServices {
                 } catch {
                     print("error")
 
+                    completion(nil)
+                }
+            case .failure(let error):
+                print("error", error)
+                completion(nil)
+            }
+        }
+    }
+    
+    func getItemDescription(itemId: String, completion: @escaping (DescriptionResponse?) -> Void) {
+        let url = "https://api.mercadolibre.com/items/\(itemId)/description"
+
+        apiClient.get(url: url) { response in
+            switch response {
+            case .success(let data):
+                do {
+                    if let data = data {
+                        let itens = try JSONDecoder().decode(DescriptionResponse.self, from: data)
+                        completion(itens)
+                    }
+                } catch {
+                    print("error")
                     completion(nil)
                 }
             case .failure(let error):

@@ -21,6 +21,13 @@ final class HomeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var HeaderUIView: UIView!
     @IBOutlet weak var inputContainerView: UIView!
     @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var loadingActivityIndicatorView: UIActivityIndicatorView!
+    @IBOutlet weak var emptyResultView: UIView!
+    @IBOutlet weak var errorView: UIView!
+    
+    let userDefaults = UserDefaults.standard
+    var items: [BodyItemsResponse] = []
+    let itensServices = ItensServices()
     
     @IBAction func inputDidEndEditing(_ sender: Any) {
         print("eae")
@@ -29,29 +36,30 @@ final class HomeViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print("return pressed")
         if let search = self.searchTextField.text {
+            self.emptyResultView.isHidden = true
             getItems(searchText: search)
         }
         textField.resignFirstResponder()
         return false
     }
 
-    var items: [BodyItemsResponse] = []
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
+        itemsTableView.reloadData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getItems(searchText: "capa")
+        
+        
+        getItems(searchText: "celular")
 
         self.searchTextField.delegate = self
+        
+        emptyResultView.isHidden = true
+        errorView.isHidden = true
         
         HeaderUIView.layer.shadowColor = UIColor.black.cgColor
         HeaderUIView.layer.shadowOpacity = 0.1
@@ -64,6 +72,7 @@ final class HomeViewController: UIViewController, UITextFieldDelegate {
         searchTextField.borderStyle = .none
         searchTextField.isEnabled = true
         
+        itemsTableView.isHidden = true
         itemsTableView.dataSource = self
         itemsTableView.delegate = self
         itemsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -71,29 +80,6 @@ final class HomeViewController: UIViewController, UITextFieldDelegate {
         itemsTableView.rowHeight = 150
         itemsTableView.contentInset = UIEdgeInsets(top: -20, left: 0, bottom: 0, right: 0);
         itemsTableView.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-    }
-    
-    private func getItems(searchText: String) {
-        let itensServices = ItensServices()
-        
-        itensServices.getCategoriesCode(of: searchText) { response in
-            guard let response = response, response.count > 0 else { return }
-            
-            itensServices.getTopTwentyByCategory(category_id: response[0].category_id) { response in
-                guard let response = response else { return }
-                let url = self.reduceUrl(response)
-                
-                
-                print("url", url)
-                itensServices.getInfoByItemId(itemsIds: url) { response in
-                    guard let response = response else { return }
-                    
-                    self.items = response
-                    self.itemsTableView.reloadData()
-                    print("produtitos", response)
-                }
-            }
-        }
     }
     
     private func reduceUrl(_ response: TopTwentyResponse) -> String {
@@ -110,6 +96,44 @@ final class HomeViewController: UIViewController, UITextFieldDelegate {
         return url
     }
     
+    private func getItems(searchText: String) {
+        self.errorView.isHidden = true
+        self.loadingActivityIndicatorView.isHidden = false
+        
+        itensServices.getCategoriesCode(of: searchText) { response in
+            guard let response = response, response.count > 0 else {
+                self.loadingActivityIndicatorView.isHidden = true
+                self.emptyResultView.isHidden = false
+                return
+            }
+
+            self.itensServices.getTopTwentyByCategory(category_id: response[0].category_id) { response in
+                guard let response = response else {
+                    self.loadingActivityIndicatorView.isHidden = true
+                    self.errorView.isHidden = false
+                    return
+                }
+                let url = self.reduceUrl(response)
+                
+                
+                print("url", url)
+                self.itensServices.getInfoByItemId(itemsIds: url) { response in
+                    guard let response = response else {
+                        self.loadingActivityIndicatorView.isHidden = true
+                        self.errorView.isHidden = false
+                        return
+                    }
+                    
+                    self.itemsTableView.isHidden = false
+                    self.loadingActivityIndicatorView.isHidden = true
+                    self.items = response
+                    self.itemsTableView.reloadData()
+                    print("produtitos", response)
+                }
+            }
+        }
+    }
+    
 }
 
 extension HomeViewController: UITableViewDataSource {
@@ -122,33 +146,66 @@ extension HomeViewController: UITableViewDataSource {
 //        let cell = Bundle.main.loadNibNamed("ItemTableViewCell", owner: self, options: nil)?.first as! ItemTableViewCell
         let cell = itemsTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ItemTableViewCell
 
+        let favoriteItens = self.userDefaults.array(forKey: "favoriteItemsArray") as! [String]?
+
         let item = items[indexPath.row]
         
-        cell.favoriteButtonView.backgroundColor = UIColor(displayP3Red: 1, green: 1, blue: 1, alpha: 0.8)
+        let findItemOnArray = favoriteItens?.first(where: {$0 == item.body.id})
         
+        //cell.favoriteButtonView.backgroundColor = UIColor(displayP3Red: 1, green: 1, blue: 1, alpha: 0.8)
+        cell.FavoriteButtonUIControl.backgroundColor = UIColor(displayP3Red: 1, green: 1, blue: 1, alpha: 0.8)
+        cell.FavoriteButtonUIControl.layer.cornerRadius = 14.5
+        
+        cell.heartImageView.image = findItemOnArray == nil ? UIImage(systemName: "heart") : UIImage(systemName: "heart.fill")
         cell.titleLabel.text = item.body.title
         cell.priceLabel.text = "$\(item.body.price)"
         cell.descriptionOneLabel.text = "Vendidos: \(item.body.sold_quantity)"
         cell.descriptionTwoLabel.text = "Disponíveis: \(item.body.available_quantity)"
+        cell.favoriteAction = {
+            onHeartClick()
+        }
         
         if let url = URL(string: item.body.pictures[0].secure_url) {
             UIImage.loadFrom(url: url) { image in
                 cell.itemUIImage.image = image
-                cell.itemUIImage.contentMode = .scaleAspectFill
             }
         } else {
             cell.itemUIImage.image = UIImage(imageLiteralResourceName: "porsche")
         }
         
+        func onHeartClick() {
+            let favoriteItens = self.userDefaults.array(forKey: "favoriteItemsArray") as! [String]?
+            let findItemOnArray = favoriteItens?.first(where: {$0 == item.body.id})
+            
+            if var auxArray = favoriteItens {
+                if findItemOnArray == nil {
+                    cell.heartImageView.image = UIImage(systemName: "heart.fill")
+                    auxArray.append(item.body.id)
+                    self.userDefaults.set(auxArray, forKey: "favoriteItemsArray")
+                } else {
+                    //                    let aux = auxArray
+                    let index = auxArray.firstIndex(of: item.body.id)
+                    if let indexAux = index {
+                        auxArray.remove(at: indexAux)
+                        self.userDefaults.set(auxArray, forKey: "favoriteItemsArray")
+                        cell.heartImageView.image = UIImage(systemName: "heart")
+                    }
+                }
+            } else {
+                self.userDefaults.set([item.body.id], forKey: "favoriteItemsArray")
+                cell.heartImageView.image = UIImage(systemName: "heart.fill")
+            }
+        }
         return cell
     }
-    
 }
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let itemViewController = ItemViewController(nibName: "ItemViewController", bundle: nil)
+        itemViewController.item = items[indexPath.row].body
         navigationController?.pushViewController(itemViewController, animated: true)
+        itemsTableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

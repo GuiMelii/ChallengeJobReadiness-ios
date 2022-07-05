@@ -23,6 +23,7 @@
 		0E7315C2286A437200C01052 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E7315C0286A437200C01052 /* HomeViewController.xib */; };
 		0E7315C5286A44A300C01052 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7315C3286A44A300C01052 /* FavoritesViewController.swift */; };
 		0E7315C6286A44A300C01052 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E7315C4286A44A300C01052 /* FavoritesViewController.xib */; };
+		0EA9D9C12874721000B1C25A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9D9C02874721000B1C25A /* Utils.swift */; };
 		0EB03F25286CD8EC005A357D /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB03F23286CD8EC005A357D /* ItemViewController.swift */; };
 		0EB03F26286CD8EC005A357D /* ItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB03F24286CD8EC005A357D /* ItemViewController.xib */; };
 		0ECB089B286B4E8F00150951 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB0899286B4E8F00150951 /* ItemTableViewCell.swift */; };
@@ -71,6 +72,7 @@
 		0E7315C0286A437200C01052 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		0E7315C3286A44A300C01052 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		0E7315C4286A44A300C01052 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		0EA9D9C02874721000B1C25A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		0EB03F23286CD8EC005A357D /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		0EB03F24286CD8EC005A357D /* ItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemViewController.xib; sourceTree = "<group>"; };
 		0ECB0899286B4E8F00150951 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		0E73158A286A40D900C01052 /* ChallengeJobReadiness */ = {
 			isa = PBXGroup;
 			children = (
+				0EA9D9BF2874720300B1C25A /* Utils */,
 				0E680D36286B89310009C725 /* Services */,
 				0E73158B286A40D900C01052 /* AppDelegate.swift */,
 				0E73158D286A40D900C01052 /* SceneDelegate.swift */,
@@ -183,6 +186,14 @@
 				0E7315AE286A40DB00C01052 /* ChallengeJobReadinessUITestsLaunchTests.swift */,
 			);
 			path = ChallengeJobReadinessUITests;
+			sourceTree = "<group>";
+		};
+		0EA9D9BF2874720300B1C25A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0EA9D9C02874721000B1C25A /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		861EC05D091D45266A9B427A /* Frameworks */ = {
@@ -458,6 +469,7 @@
 				0E73158C286A40D900C01052 /* AppDelegate.swift in Sources */,
 				0E680D38286B89590009C725 /* AlamoFireApiClient.swift in Sources */,
 				0E7315C5286A44A300C01052 /* FavoritesViewController.swift in Sources */,
+				0EA9D9C12874721000B1C25A /* Utils.swift in Sources */,
 				0EB03F25286CD8EC005A357D /* ItemViewController.swift in Sources */,
 				0ECB089B286B4E8F00150951 /* ItemTableViewCell.swift in Sources */,
 				0E73158E286A40D900C01052 /* SceneDelegate.swift in Sources */,
@@ -635,6 +647,7 @@
 				INFOPLIST_FILE = ChallengeJobReadiness/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -663,6 +676,7 @@
 				INFOPLIST_FILE = ChallengeJobReadiness/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
