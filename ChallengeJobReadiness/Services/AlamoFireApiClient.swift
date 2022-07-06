@@ -11,7 +11,7 @@ import Alamofire
 class AlamofireApiClient {
     
     let headers: HTTPHeaders = [
-        "Authorization": "Bearer your_token",
+        "Authorization": "Bearer APP_USR-2299496188847258-070608-b7025dc8fafb47a99d03088c2b4feb4f-1073987558",
         "Accept": "application/json"
     ]
     

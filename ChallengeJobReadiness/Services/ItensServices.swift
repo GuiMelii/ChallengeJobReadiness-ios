@@ -46,7 +46,8 @@ final class ItensServices {
                         let topTwenty = try JSONDecoder().decode(TopTwentyResponse.self, from: data)
                         completion(topTwenty)
                     }
-                } catch {
+                } catch(let error) {
+                    print("❌", error)
                     completion(nil)
                 }
             case .failure(let error):
@@ -69,7 +70,8 @@ final class ItensServices {
                         let itens = try JSONDecoder().decode([BodyItemsResponse].self, from: data)
                         completion(itens)
                     }
-                } catch {
+                } catch(let error) {
+                    print("❌", error)
                     completion(nil)
                 }
             case .failure(let error):

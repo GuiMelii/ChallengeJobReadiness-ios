@@ -200,8 +200,8 @@
 		0EA9D9C22874B22000B1C25A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0EA9D9CC2874BFEB00B1C25A /* Favorites */,
 				0EA9D9C92874BF2200B1C25A /* Home */,
+				0EA9D9CC2874BFEB00B1C25A /* Favorites */,
 				0E7315BB286A414500C01052 /* InitialTabViewController.swift */,
 				0EB03F23286CD8EC005A357D /* ItemViewController.swift */,
 			);

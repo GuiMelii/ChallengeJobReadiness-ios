@@ -25,6 +25,8 @@ final class HomeViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         setupView()
         getItems(searchText: "celular")
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+//        view.addGestureRecognizer(tap)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,12 +62,24 @@ final class HomeViewController: UIViewController, UITextFieldDelegate {
         itemsTableView.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if let search = self.searchTextField.text {
+        if let search = self.searchTextField.text, self.searchTextField.text != "" {
             self.emptyResultView.isHidden = true
             getItems(searchText: search)
+        } else {
+            let resultAlert = UIAlertController(title: "O campo de busca está vazio.", message: "Preencha com o produto no campo de busca, por favor.",
+                                                preferredStyle: .alert)
+            resultAlert.addAction(UIAlertAction(
+                title: "Fechar",
+                style: .cancel))
+            present(resultAlert, animated: true)
         }
+        
         textField.resignFirstResponder()
         return false
     }

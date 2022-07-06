@@ -33,14 +33,18 @@ final class ItemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         let favoriteItens = self.userDefaults.array(forKey: "favoriteItemsArray") as! [String]?
         let findItemOnArray = favoriteItens?.first(where: {$0 == item.id})
         
-        if findItemOnArray != nil {
-            self.heartUIButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
-        }
-        
+        self.heartUIButton.setImage(findItemOnArray != nil ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart"), for: .normal)
+        getDescription()
+    }
+    
+    private func setupView() {
         self.subtitleLabel.text = item.title
         self.titleLabel.text = item.title
         self.priceLabel.text = formatToCurrency(value: item.price)
@@ -56,22 +60,18 @@ final class ItemViewController: UIViewController {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        getDescription()
-    }
-    
     private func getDescription() {
         itensServices.getItemDescription(itemId: item.id) { response in
             guard let response = response else { return }
             self.descriptionTextView.text = response.plain_text
-
+            
         }
     }
     
     @IBAction private func backButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
-        
+    
     @IBAction private func onHeartClick(_ sender: UIButton) {
         var favoriteItens = self.userDefaults.array(forKey: "favoriteItemsArray") as! [String]?
         let findItemOnArray = favoriteItens?.first(where: {$0 == item.id})
