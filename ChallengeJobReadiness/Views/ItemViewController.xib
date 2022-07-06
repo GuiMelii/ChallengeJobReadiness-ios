@@ -118,7 +118,7 @@
                     <rect key="frame" x="0.0" y="124" width="414" height="1376"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXH-Uq-y7y">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="734"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="752"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volkswagen Fox 1.6 Connect" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1D-YQ-gJ8">
                                     <rect key="frame" x="16" y="32" width="161" height="14.5"/>
@@ -281,9 +281,9 @@
                                         </label>
                                     </subviews>
                                 </stackView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CW-RE-nlr">
-                                    <rect key="frame" x="16" y="718" width="0.0" height="0.0"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CW-RE-nlr">
+                                    <rect key="frame" x="16" y="718" width="69" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -334,7 +334,6 @@
                 <constraint firstAttribute="bottom" secondItem="5cT-Ur-4Lq" secondAttribute="bottom" id="7Zs-RD-vhd"/>
                 <constraint firstItem="R23-r3-6zP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9HD-tt-XCb"/>
                 <constraint firstItem="5cT-Ur-4Lq" firstAttribute="top" secondItem="R23-r3-6zP" secondAttribute="bottom" id="AHZ-Gn-ETc"/>
-                <constraint firstItem="5cT-Ur-4Lq" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="34" id="bev-oG-ypw"/>
                 <constraint firstItem="5cT-Ur-4Lq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dOe-Gp-KnQ"/>
                 <constraint firstItem="pXH-Uq-y7y" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="hHj-M5-uUh"/>
                 <constraint firstItem="R23-r3-6zP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hor-Pz-xkb"/>

@@ -55,9 +55,7 @@ final class ItemViewController: UIViewController {
             UIImage.loadFrom(url: url) { image in
                 self.mainImageView.image = image
             }
-        } else {
-            self.mainImageView.image = UIImage(imageLiteralResourceName: "porsche")
-        }
+        } 
     }
     
     private func getDescription() {

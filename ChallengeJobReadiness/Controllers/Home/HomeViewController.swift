@@ -25,8 +25,6 @@ final class HomeViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         setupView()
         getItems(searchText: "celular")
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-//        view.addGestureRecognizer(tap)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,11 +58,6 @@ final class HomeViewController: UIViewController, UITextFieldDelegate {
         itemsTableView.rowHeight = 150
         itemsTableView.contentInset = UIEdgeInsets(top: -20, left: 0, bottom: 0, right: 0);
         itemsTableView.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-    }
-    
-    @objc func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

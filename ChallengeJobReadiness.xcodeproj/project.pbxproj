@@ -12,7 +12,6 @@
 		0E73158C286A40D900C01052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73158B286A40D900C01052 /* AppDelegate.swift */; };
 		0E73158E286A40D900C01052 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73158D286A40D900C01052 /* SceneDelegate.swift */; };
 		0E731595286A40DB00C01052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E731594286A40DB00C01052 /* Assets.xcassets */; };
-		0E731598286A40DB00C01052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E731596286A40DB00C01052 /* LaunchScreen.storyboard */; };
 		0E7315A3286A40DB00C01052 /* ChallengeJobReadinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7315A2286A40DB00C01052 /* ChallengeJobReadinessTests.swift */; };
 		0E7315AD286A40DB00C01052 /* ChallengeJobReadinessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7315AC286A40DB00C01052 /* ChallengeJobReadinessUITests.swift */; };
 		0E7315AF286A40DB00C01052 /* ChallengeJobReadinessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7315AE286A40DB00C01052 /* ChallengeJobReadinessUITestsLaunchTests.swift */; };
@@ -22,6 +21,7 @@
 		0E7315C2286A437200C01052 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E7315C0286A437200C01052 /* HomeViewController.xib */; };
 		0E7315C5286A44A300C01052 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7315C3286A44A300C01052 /* FavoritesViewController.swift */; };
 		0E7315C6286A44A300C01052 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E7315C4286A44A300C01052 /* FavoritesViewController.xib */; };
+		0E9A3F462875F69900DF0937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9A3F452875F69900DF0937 /* LaunchScreen.storyboard */; };
 		0EA9D9C12874721000B1C25A /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9D9C02874721000B1C25A /* Formatters.swift */; };
 		0EA9D9C62874B2FC00B1C25A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9D9C52874B2FC00B1C25A /* Item.swift */; };
 		0EA9D9C82874B52000B1C25A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9D9C72874B52000B1C25A /* Extensions.swift */; };
@@ -61,7 +61,6 @@
 		0E73158B286A40D900C01052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E73158D286A40D900C01052 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0E731594286A40DB00C01052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0E731597286A40DB00C01052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E731599286A40DB00C01052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E73159E286A40DB00C01052 /* ChallengeJobReadinessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeJobReadinessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7315A2286A40DB00C01052 /* ChallengeJobReadinessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeJobReadinessTests.swift; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		0E7315C0286A437200C01052 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		0E7315C3286A44A300C01052 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		0E7315C4286A44A300C01052 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		0E9A3F452875F69900DF0937 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../../../../../.Trash/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EA9D9C02874721000B1C25A /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		0EA9D9C52874B2FC00B1C25A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		0EA9D9C72874B52000B1C25A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 				0E73158D286A40D900C01052 /* SceneDelegate.swift */,
 				0ECB0899286B4E8F00150951 /* ItemTableViewCell.swift */,
 				0ECB089A286B4E8F00150951 /* ItemTableViewCell.xib */,
-				0E731596286A40DB00C01052 /* LaunchScreen.storyboard */,
+				0E9A3F452875F69900DF0937 /* LaunchScreen.storyboard */,
 				0E731594286A40DB00C01052 /* Assets.xcassets */,
 				0E731599286A40DB00C01052 /* Info.plist */,
 			);
@@ -377,11 +377,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E731598286A40DB00C01052 /* LaunchScreen.storyboard in Resources */,
 				0E7315BE286A414500C01052 /* InitialTabViewController.xib in Resources */,
 				0E731595286A40DB00C01052 /* Assets.xcassets in Resources */,
 				0EB03F26286CD8EC005A357D /* ItemViewController.xib in Resources */,
 				0E7315C6286A44A300C01052 /* FavoritesViewController.xib in Resources */,
+				0E9A3F462875F69900DF0937 /* LaunchScreen.storyboard in Resources */,
 				0ECB089C286B4E8F00150951 /* ItemTableViewCell.xib in Resources */,
 				0E7315C2286A437200C01052 /* HomeViewController.xib in Resources */,
 			);
@@ -560,17 +560,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		0E731596286A40DB00C01052 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0E731597286A40DB00C01052 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		0E7315B0286A40DB00C01052 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -692,6 +681,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BSWF7947PU;
@@ -702,6 +692,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -721,6 +712,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BSWF7947PU;
@@ -731,6 +723,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -129,7 +129,7 @@
                                     <rect key="frame" x="7.9999999999999982" y="5.9999999999999982" width="20.333333333333329" height="18.666666666666664"/>
                                     <color key="tintColor" systemColor="systemGray2Color"/>
                                 </imageView>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Buscan en Mercado Libre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M02-ha-gQq">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Buscar no Mercado Livre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M02-ha-gQq">
                                     <rect key="frame" x="32.333333333333329" y="0.0" width="221.66666666666669" height="30"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>

@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+//HomeViewController+Extension nomenclatura
 // MARK: - TableView Configuration
 extension HomeViewController: UITableViewDataSource {
     
@@ -37,9 +38,7 @@ extension HomeViewController: UITableViewDataSource {
             UIImage.loadFrom(url: url) { image in
                 cell.itemUIImage.image = image
             }
-        } else {
-            cell.itemUIImage.image = UIImage(imageLiteralResourceName: "porsche")
-        }
+        } 
         
         return cell
     }

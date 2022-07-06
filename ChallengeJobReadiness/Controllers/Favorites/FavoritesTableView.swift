@@ -31,8 +31,6 @@ extension FavoritesViewController: UITableViewDataSource {
             UIImage.loadFrom(url: url) { image in
                 cell.itemUIImage.image = image
             }
-        } else {
-            cell.itemUIImage.image = UIImage(imageLiteralResourceName: "porsche")
         }
         cell.favoriteAction = {
             self.onHeartClick(indexPath.row)
